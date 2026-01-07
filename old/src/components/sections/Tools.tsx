@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Badge } from "../ui/badge";
 import { Card, CardContent } from "../ui/card";
 import { Separator } from "../ui/separator";
-import { CheckCircle, Package } from "lucide-react";
+import { CheckCircle, Package } from "../../../old/node_modules/lucide-react/dist/lucide-react";
 
 const m: any = motion;
 

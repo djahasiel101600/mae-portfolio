@@ -12,7 +12,7 @@ import { Textarea } from "../ui/textarea";
 import { Label } from "../ui/label";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
-import { Mail, MessageSquare, CalendarCheck, Heart, Send } from "lucide-react";
+import { Mail, MessageSquare, CalendarCheck, Heart, Send } from "../../../old/node_modules/lucide-react/dist/lucide-react";
 
 export function Contact() {
   const [formData, setFormData] = useState({

@@ -1,4 +1,4 @@
-import { Feather } from "lucide-react";
+import { Feather } from "../../../old/node_modules/lucide-react/dist/lucide-react";
 import { Separator } from "../ui/separator";
 
 export function Footer() {

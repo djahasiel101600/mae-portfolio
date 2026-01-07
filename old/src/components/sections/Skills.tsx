@@ -8,7 +8,7 @@ import {
 } from "../ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { Badge } from "../ui/badge";
-import { Monitor, Database, UserCheck, CheckCircle, Star } from "lucide-react";
+import { Monitor, Database, UserCheck, CheckCircle, Star } from "../../../old/node_modules/lucide-react/dist/lucide-react";
 
 export function Skills() {
   const skills = [

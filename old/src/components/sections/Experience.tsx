@@ -8,7 +8,7 @@ import {
 } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Separator } from "../ui/separator";
-import { Briefcase, GraduationCap, Clock } from "lucide-react";
+import { Briefcase, GraduationCap, Clock } from "../../../old/node_modules/lucide-react/dist/lucide-react";
 
 export function Experience() {
   const experiences = [

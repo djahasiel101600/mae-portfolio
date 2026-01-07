@@ -7,7 +7,7 @@ import {
   ListTodo,
   Lightbulb,
   Handshake,
-} from "lucide-react";
+} from "../../../old/node_modules/lucide-react/dist/lucide-react";
 
 export function Attributes() {
   const attributes = [

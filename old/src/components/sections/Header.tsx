@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Feather } from "lucide-react";
 import { Button } from "../ui/button";
 import { ThemeToggle } from "../theme-toggle";
 import { motion, AnimatePresence } from "framer-motion";
@@ -43,11 +43,7 @@ export function Header() {
           ? "glass-effect shadow-lg"
           : "bg-background/80 backdrop-blur-sm"
       }`}
-      role="banner"
     >
-      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-primary text-primary-foreground px-4 py-2 rounded z-[100]">
-        Skip to main content
-      </a>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
@@ -60,21 +56,15 @@ export function Header() {
             className="flex items-center gap-2 text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            aria-label="Mae Busano - Home"
           >
-            <img 
-              src="/logo.png" 
-              alt="Mae Busano Logo" 
-              className="h-8 w-auto" 
-              aria-hidden="true" 
-            />
+            <Feather className="w-6 h-6 text-primary" />
             <span>
               Mae<span className="text-foreground">Busano</span>
             </span>
           </motion.a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1" aria-label="Main navigation">
+          <nav className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <Button
                 key={link.href}
