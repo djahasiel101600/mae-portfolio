@@ -98,6 +98,38 @@ export function SEO({
     ],
   };
 
+  // Schema.org BreadcrumbList for better navigation in search results
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: url,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Skills",
+        item: `${url}#skills`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Experience",
+        item: `${url}#experience`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Contact",
+        item: `${url}#contact`,
+      },
+    ],
+  };
+
   return (
     <Helmet>
       {/* Primary Meta Tags */}
@@ -146,6 +178,9 @@ export function SEO({
       </script>
       <script type="application/ld+json">
         {JSON.stringify(serviceSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
       </script>
     </Helmet>
   );
