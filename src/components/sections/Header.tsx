@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Feather } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "../ui/button";
 import { ThemeToggle } from "../theme-toggle";
 import { motion, AnimatePresence } from "framer-motion";
@@ -62,7 +62,12 @@ export function Header() {
             whileTap={{ scale: 0.95 }}
             aria-label="Mae Busano - Home"
           >
-            <Feather className="w-6 h-6 text-primary" aria-hidden="true" />
+            <img 
+              src="/logo.png" 
+              alt="Mae Busano Logo" 
+              className="h-8 w-auto" 
+              aria-hidden="true" 
+            />
             <span>
               Mae<span className="text-foreground">Busano</span>
             </span>
