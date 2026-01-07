@@ -1,5 +1,5 @@
 # robots.txt for Mae Busano Portfolio
-# https://maebusano.com
+# https://mae-va.vercel.app
 
 User-agent: *
 Allow: /
@@ -8,7 +8,7 @@ Allow: /
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://maebusano.com/sitemap.xml
+Sitemap: https://mae-va.vercel.app/sitemap.xml
 
 # Crawl delay (optional - helps prevent server overload)
 Crawl-delay: 1
