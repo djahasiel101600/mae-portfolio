@@ -1,0 +1,12 @@
+node_modules
+.next
+.env
+.env.local
+.env.development
+.env.production
+dist
+coverage
+build
+.DS_Store
+**/*.log
+types/*.d.ts
