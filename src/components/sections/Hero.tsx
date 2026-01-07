@@ -14,8 +14,8 @@ export function Hero() {
   const contactItems = [
     {
       icon: Mail,
-      text: "mae.busano@email.com",
-      href: "mailto:mae.busano@email.com",
+      text: "wmaebusano@email.com",
+      href: "mailto:wmaebusano@email.com",
     },
     { icon: MapPin, text: "Philippines" },
     { icon: Clock, text: "Open to Full-time or Part-time Remote Work" },
