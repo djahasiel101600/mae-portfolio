@@ -83,7 +83,7 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 gradient-bg">
+    <section id="contact" className="py-20 gradient-bg" aria-labelledby="contact-heading">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -93,6 +93,7 @@ export function Contact() {
           className="text-center mb-12"
         >
           <h2
+            id="contact-heading"
             className="text-4xl md:text-5xl font-bold text-primary mb-4"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >

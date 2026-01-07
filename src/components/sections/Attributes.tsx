@@ -50,7 +50,7 @@ export function Attributes() {
   ];
 
   return (
-    <section id="attributes" className="py-20 gradient-bg">
+    <section id="attributes" className="py-20 gradient-bg" aria-labelledby="attributes-heading">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,6 +60,7 @@ export function Attributes() {
           className="text-center mb-12"
         >
           <h2
+            id="attributes-heading"
             className="text-4xl md:text-5xl font-bold text-primary mb-4"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >

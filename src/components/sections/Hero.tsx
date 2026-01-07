@@ -25,10 +25,11 @@ export function Hero() {
     <section
       id="home"
       className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden pt-20"
+      aria-labelledby="hero-heading"
     >
       {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" aria-hidden="true"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" aria-hidden="true"></div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -51,17 +52,18 @@ export function Hero() {
             </motion.div>
             <motion.h1
               {...fadeInUp}
+              id="hero-heading"
               className="text-5xl md:text-7xl font-bold text-primary mb-4"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
               Mae Busano
             </motion.h1>
-            <motion.div
+            <motion.p
               {...fadeInUp}
               className="text-xl md:text-2xl text-foreground font-medium mb-6"
             >
               Virtual Assistant | Administrative & Data Support Specialist
-            </motion.div>
+            </motion.p>
             <motion.p
               {...fadeInUp}
               className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8"

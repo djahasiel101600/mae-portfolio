@@ -1,0 +1,32 @@
+# robots.txt for Mae Busano Portfolio
+# https://maebusano.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private paths (if any)
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://maebusano.com/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+
+# Allow social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /

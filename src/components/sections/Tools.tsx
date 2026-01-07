@@ -26,7 +26,7 @@ export function Tools() {
   ];
 
   return (
-    <section id="tools" className="py-20 gradient-bg">
+    <section id="tools" className="py-20 gradient-bg" aria-labelledby="tools-heading">
       <div className="container mx-auto px-4">
         <m.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,6 +36,7 @@ export function Tools() {
           className="text-center mb-12"
         >
           <h2
+            id="tools-heading"
             className="text-4xl md:text-5xl font-bold text-primary mb-4"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >

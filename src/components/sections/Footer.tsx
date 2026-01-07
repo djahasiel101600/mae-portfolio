@@ -20,19 +20,19 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="bg-primary text-primary-foreground py-12" role="contentinfo">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center">
           {/* Logo */}
           <div className="flex items-center gap-2 text-3xl font-bold mb-6">
-            <Feather className="w-7 h-7" />
+            <Feather className="w-7 h-7" aria-hidden="true" />
             <span style={{ fontFamily: "'Playfair Display', serif" }}>
               Mae Busano
             </span>
           </div>
 
           {/* Navigation Links */}
-          <nav className="mb-8">
+          <nav className="mb-8" aria-label="Footer navigation">
             <ul className="flex flex-wrap justify-center gap-6">
               {navLinks.map((link) => (
                 <li key={link.href}>

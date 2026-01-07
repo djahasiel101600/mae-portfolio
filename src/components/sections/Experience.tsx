@@ -42,7 +42,7 @@ export function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-background">
+    <section id="experience" className="py-20 bg-background" aria-labelledby="experience-heading">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,6 +52,7 @@ export function Experience() {
           className="text-center mb-12"
         >
           <h2
+            id="experience-heading"
             className="text-4xl md:text-5xl font-bold text-primary mb-4"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
