@@ -142,6 +142,7 @@ export function SEO({
       <meta name="language" content="English" />
       <meta name="revisit-after" content="7 days" />
       <meta name="rating" content="general" />
+      <meta name="google-site-verification" content="2EhTdjpoUHbf6WD3Zk7qJVmovXGXd5E-hcQy-_YryNs" />
 
       {/* Canonical URL */}
       <link rel="canonical" href={url} />
