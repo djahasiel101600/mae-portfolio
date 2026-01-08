@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://maebusano.com";
+const SITE_URL = "https://mae-va.vercel.app";
 
 export const metadata: Metadata = {
   title: "Mae Busano | Expert Virtual Assistant & Social Media Manager",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Reliable Virtual Assistant specializing in administrative support, social media management, and content creation. Helping businesses scale with efficiency.",
     url: SITE_URL,
     siteName: "Mae Busano Portfolio",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
     locale: "en_US",
     type: "website",
   },
@@ -34,7 +34,12 @@ export const metadata: Metadata = {
     title: "Mae Busano | Expert Virtual Assistant & Social Media Manager",
     description:
       "Reliable Virtual Assistant specializing in administrative support, social media management, and content creation. Helping businesses scale with efficiency.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
+  },
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   robots: {
     index: true,
@@ -42,7 +47,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const metadataBase = new URL("https://maebusano.com");
+export const metadataBase = new URL("https://mae-va.vercel.app");
 
 const personSchema = {
   "@context": "https://schema.org",
@@ -53,7 +58,7 @@ const personSchema = {
     "Detail-oriented and reliable professional with strong experience in administrative support, data organization, and report preparation.",
   url: SITE_URL,
   image: `${SITE_URL}/og-image.svg`,
-  email: "mae.busano@email.com",
+  email: "wmaebusano@email.com",
   address: {
     "@type": "PostalAddress",
     addressCountry: "Philippines",
