@@ -42,7 +42,7 @@ export default function Hero() {
             }}
           >
             <motion.div {...fadeInUp} className="flex justify-center mb-6">
-              <Avatar className="w-32 h-32 border-4 border-primary/20 shadow-2xl">
+              <Avatar aria-label="Mae Busano - Virtual Assistant Profile" className="w-32 h-32 border-4 border-primary/20 shadow-2xl">
                 <AvatarFallback className="bg-linear-to-br from-primary to-secondary text-white text-4xl font-bold">
                   MB
                 </AvatarFallback>
@@ -89,11 +89,11 @@ export default function Hero() {
                 className="text-base group"
               >
                 <Sparkles className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform" />
-                Work With Me
+                Hire Me
               </Button>
 
               <Button size="lg" variant="outline" onClick={() => document.querySelector("#skills")?.scrollIntoView({ behavior: "smooth" })} className="text-base">
-                View My Skills
+                View Services
               </Button>
             </motion.div>
           </motion.div>

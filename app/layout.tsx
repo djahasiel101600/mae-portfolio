@@ -16,13 +16,13 @@ const geistMono = Geist_Mono({
 const SITE_URL = "https://maebusano.com";
 
 export const metadata: Metadata = {
-  title: "Mae Busano | Virtual Assistant Portfolio",
+  title: "Mae Busano | Expert Virtual Assistant & Social Media Manager",
   description:
-    "Professional Virtual Assistant specializing in administrative support, data management, and remote office assistance.",
+    "Reliable Virtual Assistant specializing in administrative support, social media management, and content creation. Helping businesses scale with efficiency.",
   openGraph: {
-    title: "Mae Busano | Virtual Assistant Portfolio",
+    title: "Mae Busano | Expert Virtual Assistant & Social Media Manager",
     description:
-      "Professional Virtual Assistant specializing in administrative support, data management, and remote office assistance.",
+      "Reliable Virtual Assistant specializing in administrative support, social media management, and content creation. Helping businesses scale with efficiency.",
     url: SITE_URL,
     siteName: "Mae Busano Portfolio",
     images: ["/og-image.svg"],
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mae Busano | Virtual Assistant Portfolio",
+    title: "Mae Busano | Expert Virtual Assistant & Social Media Manager",
     description:
-      "Professional Virtual Assistant specializing in administrative support, data management, and remote office assistance.",
+      "Reliable Virtual Assistant specializing in administrative support, social media management, and content creation. Helping businesses scale with efficiency.",
     images: ["/og-image.svg"],
   },
   robots: {
@@ -53,7 +53,7 @@ const personSchema = {
     "Detail-oriented and reliable professional with strong experience in administrative support, data organization, and report preparation.",
   url: SITE_URL,
   image: `${SITE_URL}/og-image.svg`,
-  email: "wmaebusano@email.com",
+  email: "mae.busano@email.com",
   address: {
     "@type": "PostalAddress",
     addressCountry: "Philippines",
@@ -67,6 +67,37 @@ const personSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What services does Mae provide?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Administrative support, email and calendar management, data entry and spreadsheets, social media management, and content creation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How can I contact Mae?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Use the contact form on this site or email mae.busano@email.com to discuss availability and rates.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Mae work remotely or on-site?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Mae is available for remote work (full-time or part-time) and can discuss on-site arrangements case-by-case.",
+      },
+    },
+  ],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -77,6 +108,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </body>
     </html>

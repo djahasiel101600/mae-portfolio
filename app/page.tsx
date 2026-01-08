@@ -6,6 +6,7 @@ import Tools from "../components/sections/Tools";
 import Experience from "../components/sections/Experience";
 import Attributes from "../components/sections/Attributes";
 import Contact from "../components/sections/Contact";
+import FAQ from "../components/sections/FAQ";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Experience />
         <Attributes />
         <Contact />
+        <FAQ />
       </main>
       <FooterSimple />
     </div>
